@@ -8,7 +8,7 @@ import { Header } from './Header';
 
 export const Blog = (props) => {
   const { title } = props;
-  const sections = [{ title: 'Posts' }];
+  const sections = [{ title: 'Home' }];
 
   const initialUserState = {
     posts: [],
