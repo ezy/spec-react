@@ -10,6 +10,7 @@
   "env": { "browser": true, "jest": true, "es6": true },
   "rules": {
     "max-len": ["error", { "code": 120 }],
+    "import/prefer-default-export": 0,
     "prefer-promise-reject-errors": ["off"],
     "react/jsx-filename-extension": ["off"],
     "react/jsx-closing-bracket-location": [1, "tag-aligned"],
