@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 
+import { ArticleCard } from '../Card/Card';
 import { Header } from './Header';
 
 export const Blog = (props) => {
@@ -40,7 +41,14 @@ export const Blog = (props) => {
           <h2 style={{ marginLeft: 20 }}>Loading posts...</h2>
         ) : (
           <Grid container spacing={9} style={{ marginTop: 10 }}>
-            {/* posts go here */}
+            {posts &&
+              posts.map((post) => (
+                <ArticleCard
+                  key={post.id}
+                  title={post.title}
+                  body={post.body}
+                />
+              ))}
           </Grid>
         )}
       </main>
