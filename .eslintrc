@@ -6,14 +6,18 @@
     "codeFrame": false
   },
   "extends": ["airbnb", "prettier"],
-  "plugins": ["react", "prettier"],
+  "plugins": ["jest", "prettier", "react", "react-hooks"],
   "env": { "browser": true, "jest": true, "es6": true },
   "rules": {
-    "max-len": ["error", { "code": 100 }],
+    "max-len": ["error", { "code": 120 }],
     "prefer-promise-reject-errors": ["off"],
     "react/jsx-filename-extension": ["off"],
     "react/jsx-closing-bracket-location": [1, "tag-aligned"],
+    "react/jsx-one-expression-per-line": 0,
     "react/prop-types": ["off"],
-    "no-return-assign": ["off"]
+    "no-return-assign": ["off"],
+    "no-console": 0,
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
   }
 }
