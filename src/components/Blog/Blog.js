@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import { CardGrid } from '../CardGrid/CardGrid';
 import { Header } from './Header';
+import { Article } from '../Article/Article';
 
 export const Blog = (props) => {
   const { title } = props;
@@ -17,7 +18,7 @@ export const Blog = (props) => {
       <Header title={title} sections={sections} />
       <Switch>
         <Route exact path="/" component={CardGrid} />
-        {/* <Route path="/:id" component={UserPage} /> */}
+        <Route path="/post/:id" component={Article} />
       </Switch>
     </Container>
   );

@@ -33,20 +33,22 @@ export const ArticleCard = (props) => {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea component={Link} to={`/posts/${String(id)}`}>
-        <CardMedia
-          className={classes.media}
-          image={`${process.env.PUBLIC_URL}/img/jf.jpg`}
-          title="Jelly"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {makeSummary(title, 40, true)}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {summary}
-          </Typography>
-        </CardContent>
+      <CardActionArea>
+        <Link to={`/post/${id}`}>
+          <CardMedia
+            className={classes.media}
+            image={`${process.env.PUBLIC_URL}/img/jf.jpg`}
+            title="Jelly"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {makeSummary(title, 40, true)}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {summary}
+            </Typography>
+          </CardContent>
+        </Link>
       </CardActionArea>
     </Card>
   );

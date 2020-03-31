@@ -30,7 +30,12 @@ export const CardGrid = () => {
         <Grid container spacing={9} style={{ marginTop: 10 }}>
           {posts &&
             posts.map((post) => (
-              <ArticleCard key={post.id} title={post.title} body={post.body} />
+              <ArticleCard
+                key={post.id}
+                id={post.id}
+                title={post.title}
+                body={post.body}
+              />
             ))}
         </Grid>
       )}
