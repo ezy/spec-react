@@ -5,12 +5,12 @@ import Grid from '@material-ui/core/Grid';
 import { ArticleCard } from '../Card/Card';
 
 export const CardGrid = () => {
-  const initialUserState = {
+  const initialState = {
     posts: [],
     loading: true,
   };
 
-  const [posts, setPosts] = useState(initialUserState);
+  const [posts, setPosts] = useState(initialState);
 
   useEffect(() => {
     const fetchPosts = async () => {
