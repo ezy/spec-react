@@ -9,7 +9,7 @@ This is a ReactJS app using the blog api from typicode, built to show my approac
 
 ## Build time
 
-The entire app was built in 2 coding session for a total time of around 2.5 hours.
+The entire app was built in 2 coding sessions for a total time of around 2.5 hours.
 
 ## Setup methodology
 
