@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { BrowserRouter } from 'react-router-dom';
-import { Blog } from '../components/Blog/Blog';
+import { Blog } from '../../components/Blog/Blog';
 
 describe('Article component', () => {
   let wrap;

@@ -1,4 +1,4 @@
-import { makeSummary } from './make-summary';
+import { makeSummary } from '../../helpers/make-summary';
 
 describe('make summary helper', () => {
   it('truncates text', async () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { Article } from '../components/Article/Article';
+import { Article } from '../../components/Article/Article';
 
 describe('Article component', () => {
   let wrap;
