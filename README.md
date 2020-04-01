@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Spec app for jsonplaceholder.typicode.com
+
+This is a ReactJS app using the blog api from typicode, built to show my approach to building. It includes the following methodolgy:
+
+- Functional programming as per the current direction of React
+- Tests setup with Jest and Enzyme
+- A robust scalable folder structure
+- Linting with eslint, prettier and airbnb
+
+## Build time
+
+The entire app was built in 2 coding session for a total time of around 2.5 hours.
+
+## Setup methodology
+
+Created with the standard Create React App - [see a shell script for doing similar in one hit here](https://gist.github.com/ezy/107c74c014251f0c8f2c2b0bea460d58)
 
 ## Available Scripts
 
-In the project directory, you can run:
+The standard create react scripts are availavle in `package.json` for doing the basics.
 
-### `npm start`
+There are added scripts for the following:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- lint: lint
+- format: lint format
+- isready: building when ready
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Linting
 
-### `npm test`
+Linting is setup to ensure code quality and consistency.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components
 
-### `npm run build`
+All components reside in `src/components`.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Helpers
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+All components reside in `src/helpers`. If there was a requirement for any services (eg. extracting fetch into a single http request service) they would be located in `src/services`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tests
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+All tests reside in `src/__tests__`. They're an example rather than being exhaustive in the interest of saving time on spec work.
