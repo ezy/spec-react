@@ -40,3 +40,10 @@ All components reside in `src/helpers`. If there was a requirement for any servi
 ## Tests
 
 All tests reside in `src/__tests__`. They're an example rather than being exhaustive in the interest of saving time on spec work.
+
+## Things I would do for prod
+
+- Use typescript (.tsx, .ts)
+- Use `docker-compose` for running any backend and db
+- Implement a CI/CD solution
+- Use [EmberJS](https://emberjs.com/) (jokes, although it is totally the best solution for big orgs building PWAs)
