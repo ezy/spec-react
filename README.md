@@ -47,4 +47,3 @@ All tests reside in `src/__tests__`. They're an example rather than being exhaus
 - Use `docker-compose` for running any backend and db
 - Implement a CI/CD solution
 - Extract fetch into an http service for GET, PUT, POST, PATCH, DELETE
-- Use [EmberJS](https://emberjs.com/) (jokes, although it is totally the best solution for big orgs building PWAs)
